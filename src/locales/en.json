@@ -1,0 +1,181 @@
+{
+	"layout": {
+		"language": "Language"
+	},
+	"home": {
+		"title": "Ronan Letellier",
+		"subtitle": "Fullstack tech lead",
+		"about": "About",
+		"work": "Work",
+		"side-projects": "Side Projects",
+		"skills": "Skills",
+		"contact": "Contact"
+	},
+	"about": {
+		"title": "About me",
+		"description": "Fullstack software engineer for almost 15 years, I have worked with all kinds of structures. In 2013, I co-founded <lonestone>Lonestone</lonestone>, around a video game project. The company is now a product studio of about 30 people, where I continue to design, develop and grow various products.<br /><br />Specialized in the <strong>TypeScript</strong> ecosystem, I intervene throughout the life cycle of projects: from defining needs to production, through architecture, development and team support.<br /><br />I have also had the opportunity to live and study in France as well as abroad, particularly in South Korea where I followed part of my curriculum at <strong>Inha University</strong>. These experiences have allowed me to acquire a good command of English, but above all to develop a strong sensitivity to cultural contexts, international collaboration and openness to other ways of working."
+	},
+	"work": {
+		"title": "My work",
+		"description": "Some projects I had the opportunity to help build in the context of my work",
+		"live": {
+			"title": "LIVE",
+			"role": "Senior fullstack engineer",
+			"description": "On SNCF Connect & Tech's LIVE project, I contributed to the development of an on-premises remote deployment solution used to manage and update passenger information workstations.\nThe project brought together several dozen developers, designers, product owners, and scrum masters, organized into squads of 5 to 10 people working in an agile setup.\nI mainly worked with Node.js, alongside C++, NSIS, and React, following a hexagonal architecture and a test-driven development (TDD) approach."
+		},
+		"moment": {
+			"title": "Mom3nt.AI",
+			"role": "Senior fullstack engineer",
+			"description": "As part of a small development team, I contributed to the full development of mom3nt.ai, an AI-powered sales nurturing platform. The product analyzes CRM data, customer interactions, and market signals to help sales teams identify opportunities and deliver personalized follow-ups. I contributed to the entire product lifecycle, from initial development to production release, onboarding the first customers, and handing the project over to the internal engineering team. Built with TypeScript, NestJS, React, BullMQ, Vercel AI SDK, and Langfuse."
+		},
+		"sportall": {
+			"title": "Sportall",
+			"role": "Senior fullstack engineer",
+			"description": "At Sportall, I contributed to the development of a live and on-demand sports streaming platform. I worked on key features including resilient multi-terabyte file uploads with resumable transfers, video playback tracking with resume support, and scaling the platform to handle traffic spikes during major sporting events. Built with TypeScript, Express, GraphQL, React, AWS, and MongoDB."
+		},
+		"imie": {
+			"title": "IMIE",
+			"role": "Teacher",
+			"description": "As a teacher at IMIE, a higher education institution specializing in digital technologies, I taught students and career changers across several core areas of software development. I delivered both theoretical and hands-on courses covering JavaScript, databases, Git, web application development, and cloud computing fundamentals. The training emphasized practical, project-based learning, with a strong focus on software engineering best practices, collaborative development workflows, and preparing students for real-world professional environments."
+		},
+		"more": "And many more: server management, SaaS for office rental, platform for creating and selling online courses, Twitch extensions, bots for Slack, Discord, Twitter,..."
+	},
+	"side-projects": {
+		"title": "My side projects",
+		"description": "Stuff I build on my free time",
+		"lonard": {
+			"title": "Lonard",
+			"description": "<strong>Lonard</strong> is a <strong>private</strong>, <strong>open-source</strong> family-oriented social network. It gives a family its own small, closed space to stay in touch across generations: sharing news, keeping a shared calendar of events and birthdays, exploring the family genealogy, and maintaining member profiles and relations.\nEverything is invite-only and access-controlled: there is no public feed, no advertising, and no third-party tracking. It is meant to be self-hosted by a family for a family.",
+			"features": [
+				"news feed",
+				"shared calendar",
+				"family genealogy",
+				"member profiles and relations",
+				"weekly email recap",
+				"real-time notifications"
+			]
+		},
+		"mermoz": {
+			"title": "Mermoz",
+			"description": "Proprietary SaaS platform for flight schools and private pilots, created in collaboration with a UX designer. <strong>Mermoz</strong> centralizes fleet management and flight scheduling through an intuitive interface with detailed operational tracking.",
+			"features": [
+				"fleet management",
+				"instructor management",
+				"flight booking",
+				"online payments",
+				"flight school & pilot accounts",
+				"analytics"
+			]
+		},
+		"vue-grille-pain": {
+			"title": "Vue grille pain",
+			"description": "Lightweight toast library built to test and play around with the composition API of Vue 3.",
+			"features": [
+				"container positioning (toaster)",
+				"multiple toast types",
+				"multiple animation types",
+				"text truncation",
+				"light & dark themes",
+				"auto-hide on timer",
+				"some graphical customizations"
+			]
+		},
+		"life-game": {
+			"title": "Conway's game of life",
+			"description": "Implementation of <a>Conway's game of life</a> in TypeScript, with a simple user interface and a fluid animation in <strong>react</strong> and <strong>canvas</strong>.",
+			"features": [
+				"adjustable grid size",
+				"adjustable tick speed",
+				"pause and resume",
+				"reset",
+				"save and load grids"
+			]
+		}
+	},
+	"skills": {
+		"title": "Skills",
+		"description": "I design and build scalable web platforms from backend architecture to deployment. My focus is TypeScript ecosystems, cloud infrastructure, API design, and product engineering.",
+		"core": "Core Expertise",
+		"core-skills": [
+			"TypeScript",
+			"NestJS",
+			"React",
+			"PostgreSQL",
+			"Docker",
+			"Git",
+			"Github Actions"
+		],
+		"languages": "Languages & Frameworks",
+		"languages-skills": [
+			"TypeScript",
+			"JavaScript",
+			"TailwindCSS",
+			"ChakraUI",
+			"NestJS",
+			"React",
+			"VueJS",
+			"NextJS",
+			"C#",
+			"Unity",
+			"Angular",
+			"NSIS",
+			"C++",
+			"AI"
+		],
+		"data": "Data & Messaging",
+		"data-skills": [
+			"PostgreSQL",
+			"MySQL",
+			"MongoDB",
+			"DynamoDB",
+			"Clickhouse",
+			"Redis",
+			"BullMQ",
+			"RabbitMQ"
+		],
+		"infrastructure": "Infrastructure & Deployment",
+		"infrastructure-skills": [
+			"Monorepos",
+			"Dokploy",
+			"AWS",
+			"GCP",
+			"Github Actions",
+			"Gitlab CI",
+			"Langfuse",
+			"Datadog",
+			"Sentry",
+			"Render",
+			"Netlify",
+			"Vercel",
+			"Cloudflare"
+		],
+		"apis": "APIs & Communication",
+		"apis-skills": ["REST", "GraphQL", "Websockets"],
+		"auth": "Authentication & Security",
+		"auth-skills": ["Better Auth", "Auth0", "Keycloak", "Passport", "OAuth2"],
+		"product-management": "Product Management",
+		"product-management-skills": [
+			"Agile",
+			"Scrum",
+			"Specs driven",
+			"TDD",
+			"Code Reviews"
+		],
+		"tooling": "Tools",
+		"tooling-skills": [
+			"Slack",
+			"Notion",
+			"Clickup",
+			"Linear",
+			"Jira",
+			"Teams",
+			"Figma"
+		]
+	},
+	"misc": {
+		"features": "Features",
+		"website": "Website",
+		"github": "GitHub",
+		"npm": "npm"
+	}
+}
