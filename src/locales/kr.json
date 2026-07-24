@@ -1,6 +1,11 @@
 {
 	"layout": {
-		"language": "언어"
+		"language": "언어",
+		"contact": "연락처",
+		"github": "GitHub",
+		"linkedin": "LinkedIn",
+		"view-source": "이 웹사이트의 소스 코드는 GitHub에서 확인할 수 있습니다",
+		"made-with": "ronan이 <pink>♡</pink>를 담아 만들었습니다"
 	},
 	"home": {
 		"title": "론안 레텔리어",

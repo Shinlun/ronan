@@ -28,7 +28,7 @@ export function SkillSet({
 				<p className="text-muted-foreground text-xs">{description}</p>
 			)}
 
-			<div className="flex gap-2 items-center flex-wrap">
+			<div className="flex gap-2 items-center flex-wrap p-2">
 				{skills.map((skill, index) => (
 					<Badge
 						key={skill}

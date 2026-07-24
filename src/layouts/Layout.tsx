@@ -18,7 +18,7 @@ import {
 	useTransform,
 } from "motion/react";
 import { useRef, useState } from "react";
-import { useTranslation } from "react-i18next";
+import { Trans, useTranslation } from "react-i18next";
 import { Link, Outlet } from "react-router";
 import StackIcon from "tech-stack-icons";
 
@@ -118,7 +118,7 @@ export default function Layout() {
 
 			<Outlet />
 
-			<footer className="flex items-center justify-between p-4 bg-linear-to-tr from-background to-foreground/5 backdrop-blur-xl max-w-[1200px] mx-auto border-t border-border text-muted-foreground mt-10">
+			<footer className="flex items-center justify-between p-4 bg-linear-to-tr from-background to-foreground/5 backdrop-blur-xl max-w-[1200px] mx-auto border-t border-border text-muted-foreground mt-10 relative">
 				<div className="flex flex-col gap-2 flex-1">
 					<Link
 						to="mailto:ronan@proton.me"
@@ -126,7 +126,7 @@ export default function Layout() {
 						className="hover:underline hover:text-pink-400 flex gap-2 items-center"
 					>
 						<Mail className="size-4 text-foreground" />
-						Contact
+						{t("layout.contact")}
 					</Link>
 
 					<Link
@@ -135,7 +135,7 @@ export default function Layout() {
 						className="hover:underline hover:text-pink-400 flex gap-2 items-center"
 					>
 						<StackIcon name="github" className="size-4" variant={theme} />
-						Github
+						{t("layout.github")}
 					</Link>
 					<Link
 						to="https://linkedin.com/in/ronan-letellier-3ab45029/"
@@ -143,17 +143,35 @@ export default function Layout() {
 						className="hover:underline hover:text-pink-400 flex gap-2 items-center"
 					>
 						<BriefcaseBusiness className="size-4 text-foreground" />
-						LinkedIn
+						{t("layout.linkedin")}
 					</Link>
 				</div>
 
-				<p className="flex-1 text-center">
-					Made with
+				<p className="flex-1 text-center hidden md:block">
+					<Trans
+						i18nKey="layout.made-with"
+						components={{
+							pink: <span className="text-pink-400 mx-1">♡</span>,
+						}}
+					/>
+				</p>
+
+				<p className="flex-1 text-center md:hidden">
 					<span className="text-pink-400 mx-1">♡</span>
-					by ronan
 				</p>
 
 				<div className="flex-1" />
+
+				<p className="absolute bottom-2 right-2">
+					<Link
+						to="https://github.com/shinlun/ronan"
+						target="_blank"
+						className="hover:underline hover:text-pink-400 flex gap-2 items-center text-xs"
+					>
+						<StackIcon name="github" className="size-3" variant={theme} />
+						{t("layout.view-source")}
+					</Link>
+				</p>
 			</footer>
 		</div>
 	);

@@ -1,6 +1,11 @@
 {
 	"layout": {
-		"language": "Langue"
+		"language": "Langue",
+		"contact": "Contact",
+		"github": "Github",
+		"linkedin": "LinkedIn",
+		"view-source": "Voir le code source de ce site sur Github",
+		"made-with": "Fait avec <pink>♡</pink> par ronan"
 	},
 	"home": {
 		"title": "Ronan Letellier",
