@@ -1,5 +1,6 @@
 import { Separator } from "@/components/ui/separator";
 import { cn } from "@/lib/utils";
+import { BadgeCheck, FileUser, FlaskConical, Wrench } from "lucide-react";
 import { motion, useScroll, useTransform } from "motion/react";
 import { Fragment, useRef } from "react";
 import { useTranslation } from "react-i18next";
@@ -8,13 +9,16 @@ import SideProjects from "../side-projects/SideProjects";
 import { Skills } from "../skills/Skills";
 import Work from "../work/Work";
 
-const SECTIONS = [
-	"about",
-	"work",
-	"side-projects",
-	"skills",
-	// "contact"
-] as const;
+const SECTIONS = ["about", "work", "side-projects", "skills"] as const;
+
+const SECTIONS_ICONS: Map<(typeof SECTIONS)[number], React.ReactNode> = new Map(
+	[
+		["about", <FileUser className="size-6" />],
+		["work", <Wrench className="size-5" />],
+		["side-projects", <FlaskConical className="size-5" />],
+		["skills", <BadgeCheck className="size-5" />],
+	],
+);
 
 const SECTIONS_COMPONENTS: Map<(typeof SECTIONS)[number], React.ReactNode> =
 	new Map([
@@ -22,7 +26,6 @@ const SECTIONS_COMPONENTS: Map<(typeof SECTIONS)[number], React.ReactNode> =
 		["work", <Work />],
 		["side-projects", <SideProjects />],
 		["skills", <Skills />],
-		// ["contact", <div>coucou</div>],
 	]);
 
 export default function Home() {
@@ -72,7 +75,7 @@ export default function Home() {
 						</div>
 					</div>
 
-					<menu className="flex items-center gap-2 p-4 w-full justify-center">
+					<menu className="items-center gap-2 p-4 w-full justify-center hidden md:flex">
 						{SECTIONS.map((section, i) => (
 							<Fragment key={section}>
 								<a
@@ -87,6 +90,19 @@ export default function Home() {
 										className="bg-gray-500 h-4 my-auto mx-2"
 									/>
 								)}
+							</Fragment>
+						))}
+					</menu>
+
+					<menu className="md:hidden flex items-center gap-10 w-full justify-center">
+						{SECTIONS.map((section) => (
+							<Fragment key={section}>
+								<a
+									onClick={() => scrollToSection(section)}
+									className="hover:cursor-pointer text-gray-300 hover:text-pink-400"
+								>
+									{SECTIONS_ICONS.get(section)}
+								</a>
 							</Fragment>
 						))}
 					</menu>

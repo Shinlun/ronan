@@ -164,12 +164,12 @@ export function Project({
 					alt={title}
 					className={cn(
 						"flex-1 rounded-md w-full md:w-1/2",
-						isZoomedIn && invertedLayout && "translate-x-1/2",
-						isZoomedIn && !invertedLayout && "-translate-x-1/2",
-						isZoomedIn && "scale-170",
-						isZoomedIn && "-translate-y-1/2",
+						isZoomedIn && invertedLayout && "md:translate-x-1/2",
+						isZoomedIn && !invertedLayout && "md:-translate-x-1/2",
+						isZoomedIn && "md:scale-170",
+						isZoomedIn && "md:-translate-y-1/2",
 						slideFinished && "transition-scale duration-200",
-						isZoomedIn ? "cursor-zoom-out" : "cursor-zoom-in",
+						isZoomedIn ? "md:cursor-zoom-out" : "md:cursor-zoom-in",
 					)}
 					onClick={() => setIsZoomedIn((prev) => !prev)}
 				/>

@@ -169,7 +169,10 @@ export default function Layout() {
 						className="hover:underline hover:text-pink-400 flex gap-2 items-center text-xs"
 					>
 						<StackIcon name="github" className="size-3" variant={theme} />
-						{t("layout.view-source")}
+						<span className="hidden md:block">{t("layout.view-source")}</span>
+						<span className="block md:hidden">
+							{t("layout.view-source-short")}
+						</span>
 					</Link>
 				</p>
 			</footer>
