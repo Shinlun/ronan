@@ -73,7 +73,7 @@ export function Project({
 			{...props}
 		>
 			<div className="flex flex-col gap-1">
-				<h3 className="text-2xl font-bold flex gap-4 justify-between">
+				<h3 className="text-2xl font-bold flex gap-4 justify-between items-start">
 					{title}
 					<div className="flex gap-3 items-center px-2 bg-foreground/10 rounded-full">
 						<TooltipProvider>

@@ -50,7 +50,7 @@ export default function ProjectCard({
 				)}
 			</CardTitle>
 
-			<CardContent className="px-2 text-base text-foreground flex-1 whitespace-pre-line">
+			<CardContent className="px-2 text-base text-foreground flex-1 whitespace-pre-line text-justify">
 				{description}
 			</CardContent>
 
