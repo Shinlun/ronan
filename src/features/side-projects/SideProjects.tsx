@@ -138,7 +138,7 @@ export default function SideProjects() {
 				image={lifeGameImg}
 				stack={["typescript", "react", "render"]}
 				invertedLayout
-				link="https://life-game-iz86.onrender.com/"
+				link="https://conway.nomelie.fr/"
 				github="https://github.com/Shinlun/life-game"
 			/>
 		</div>
